@@ -13,10 +13,10 @@ export default function Footer() {
         </div>
 
         <ul class="flex w-full md:w-4/12 justify-end list-none">
-            <li class="ms-3 text-3xl"><Link href="https://twitter.com/" class="text-gray-600"><FaTwitter /> </Link></li>
-            <li class="ms-3 text-3xl"><Link href="https://www.facebook.com/" class="text-gray-600"> <FaFacebook /> </Link></li>
-            <li class="ms-3 text-3xl"><Link href="https://www.linkedin.com/in/emmanuel-chacha-a7414a248/" class="text-gray-600"><FaLinkedinIn /> </Link></li>            
-            <li class="ms-3 text-3xl"><Link href="https://github.com/iamchacha021" class="text-gray-600"><FaGithub /> </Link></li>            
+            <li class="ms-3 text-3xl"><Link href="https://twitter.com/" target="_blank" class="text-gray-600"><FaTwitter /> </Link></li>
+            <li class="ms-3 text-3xl"><Link href="https://www.facebook.com/" target="_blank" class="text-gray-600"> <FaFacebook /> </Link></li>
+            <li class="ms-3 text-3xl"><Link href="https://www.linkedin.com/in/emmanuel-chacha-a7414a248/" target="_blank" class="text-gray-600"><FaLinkedinIn /> </Link></li>            
+            <li class="ms-3 text-3xl"><Link href="https://github.com/iamchacha021" target="_blank" class="text-gray-600"><FaGithub /> </Link></li>            
         </ul>
     </footer>
 
