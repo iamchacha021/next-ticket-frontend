@@ -2,7 +2,7 @@ import Link from "next/link"
 
 async function getTickets(){
 
-    const res = await fetch(' http://localhost:3000/tickets', {next: {revalidate: 0}})
+    const res = await fetch(' https://tickets-backend-h3lm.onrender.com/tickets', {next: {revalidate: 0}})
 
     return res.json()
 }

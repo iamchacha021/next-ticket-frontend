@@ -9,7 +9,7 @@ import Link from "next/link"
 // }
 
 async function getBlogs(){
-    const res = await fetch('http://localhost:3000/blogs', {next: {revalidate: 0}})
+    const res = await fetch('https://tickets-backend-h3lm.onrender.com/blogs', {next: {revalidate: 0}})
 
     return res.json()
 }

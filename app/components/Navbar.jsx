@@ -14,7 +14,7 @@ export default function Navbar() {
           quality={100}
           placeholder="blur"
         />
-        <h1>Helpdesk</h1>
+        <h1>Tikiti Helpdesk</h1>
         <Link href='/'>Home</Link>
         <Link href='/tickets'>Tickets</Link>
         <Link href='/create-blog'>New Blog</Link>

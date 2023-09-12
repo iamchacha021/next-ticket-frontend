@@ -1,22 +1,23 @@
-import Image from "next/image";
 import Link from "next/link";
-import Logo from './lion.jpg'
+import {FaLinkedinIn, FaFacebook} from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer>
-        <Image 
-        className="border-4 border-black dark:border-slate-500 drop-shadow-xl shadow-black rounded-full"
-        src={Logo}
-        alt="Helpdesk Logo"
-        width={70}
-        quality={100}
-        placeholder="blur"
-        />
-        <h1>Helpdesk</h1>
-        <Link href='/'>Home</Link>
-        <Link href='/tickets'>Tickets</Link>
-        <Link href='/create-blog'>New Blog</Link>
+
+    <footer class="flex flex-wrap justify-between items-center py-3 my-4 border-t">
+        <div class="w-full md:w-4/12 flex items-center">
+            <Link href="/" class="mb-3 md:mb-0 text-gray-600 text-decoration-none flex items-center">
+                
+                <span>© 2023 Tikiti. All rights reserved</span>
+            </Link>
+        </div>
+
+        <ul class="flex w-full md:w-4/12 justify-end list-none">
+            <li class="ms-3"><Link href="#" class="text-gray-600"><FaLinkedinIn /> </Link></li>
+            
+            <li class="ms-3"><Link href="#" class="text-gray-600"> <FaFacebook /> </Link></li>
+        </ul>
     </footer>
+
   )
 }

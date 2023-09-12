@@ -22,7 +22,7 @@ export default function CreateForm() {
             title, body, priority, user_email: 'chacha@mbleina.com'
         }
 
-        const res = await fetch('http://localhost:3000/tickets', {
+        const res = await fetch('https://tickets-backend-h3lm.onrender.com/tickets', {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(ticket)

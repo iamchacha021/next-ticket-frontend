@@ -18,7 +18,7 @@ export default function CreateBlogForm() {
 
       const blog = { title, body}
 
-      const res = await fetch('http://localhost:3000/blogs', {
+      const res = await fetch('https://tickets-backend-h3lm.onrender.com/blogs', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(blog)

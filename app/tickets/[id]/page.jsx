@@ -4,19 +4,19 @@ import { notFound } from 'next/navigation'
 // we will use the function below to achieve that
 
 export async function generateStaticParams(){
-  const res = await fetch('http://localhost:3000/tickets')
+  const res = await fetch('https://tickets-backend-h3lm.onrender.com/tickets')
 
   const tickets = await res.json()
 
   return tickets.map((ticket) => ({
-    id: ticket.id
+    id: ticket.id.toString()
   }))
 }
 
 async function getTicket(id){
 
 
-  const res = await fetch(`http://localhost:3000/tickets/${id}`, {next: { revalidate: 60}})
+  const res = await fetch(`https://tickets-backend-h3lm.onrender.com/tickets/${id}`, {next: { revalidate: 60}})
 
   if (!res.ok) {
     notFound()
@@ -35,7 +35,7 @@ export default async function TicketDetails({ params }) {
       </nav>
       <div className="card">
         <h3>{ticket.title}</h3>
-        <small>Created by {ticket.user_email}</small>
+        <small>Created by Chacha</small>
         <p>{ticket.body}</p>
         <div className={`pill ${ticket.priority}`}>
             {ticket.priority} priority
