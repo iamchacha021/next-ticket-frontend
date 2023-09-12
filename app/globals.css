@@ -138,3 +138,12 @@ body {
       absolute bottom-0 right-0 
       rounded-tl-md;
   }
+
+  footer {
+    padding: 5rem;
+    border-top: turquoise 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }

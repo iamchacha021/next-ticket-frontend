@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from './lion.jpg'
-import { FaHouseUser } from "react-icons/fa";
+
 
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
           placeholder="blur"
         />
         <h1>Tikiti Helpdesk</h1>
-        <Link href='/' className="text-2xl "><FaHouseUser /></Link>
+        <Link href='/'>Home</Link>
         <Link href='/tickets'>Tickets</Link>
         <Link href='/create-blog'>New Blog</Link>
     </nav>
