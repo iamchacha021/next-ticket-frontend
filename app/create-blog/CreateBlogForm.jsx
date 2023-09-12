@@ -13,7 +13,7 @@ export default function CreateBlogForm() {
     const [isLoading, setIsLoading] = useState(false)
 
     const handleSubmit = async (e) => {
-      e.preventDefault
+      e.preventDefault()
       setIsLoading(true)
 
       const blog = { title, body}
