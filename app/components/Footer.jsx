@@ -8,7 +8,7 @@ export default function Footer() {
         <div class="w-full md:w-4/12 flex items-center">
             <Link href="/" class="mb-3 md:mb-0 text-gray-600 text-decoration-none flex items-center">
                 
-                <span>© 2023 Tikiti. All rights reserved</span>
+                <h2>© 2023 Tikiti. All rights reserved</h2>
             </Link>
         </div>
 
